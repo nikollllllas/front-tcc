@@ -3,8 +3,8 @@ import { SignInForm } from "./sign-in-form"
 import { routes } from "@/lib/constants/routes"
 
 export function SignInPage() {
-  if (!localStorage.getItem("authToken")) {
-    return <Navigate to={routes.SIGN_IN} />
+  if (localStorage.getItem("authToken")) {
+    return <Navigate to={routes.HOME} />
   }
 
   return (
