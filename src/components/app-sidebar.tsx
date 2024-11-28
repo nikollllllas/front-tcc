@@ -1,14 +1,10 @@
 import * as React from "react"
 import {
-  AudioWaveform,
   BookOpen,
-  BookPlus,
-  Command,
-  GalleryVerticalEnd,
-  GraduationCap,
+  BookPlus, GraduationCap,
   Home,
   Radio,
-  School,
+  School
 } from "lucide-react"
 
 import { NavProjects } from "@/components/nav-projects"
@@ -17,8 +13,7 @@ import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
-  SidebarHeader,
-  SidebarRail,
+  SidebarHeader
 } from "@/components/ui/sidebar"
 import { routes } from "@/lib/constants/routes"
 
