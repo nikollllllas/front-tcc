@@ -17,7 +17,6 @@ import {
 import { Input } from "@/components/ui/input"
 import { ApiError } from "@/lib/api/error"
 import { Select } from "@/components/shared/select"
-import { listCourses } from "@/lib/api/courses/list-courses"
 import { useMemo } from "react"
 import { listSubjects } from "@/lib/api/subjects/list-subjects"
 import { createCourse } from "@/lib/api/courses/create-courses"

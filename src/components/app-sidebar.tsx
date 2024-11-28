@@ -8,7 +8,6 @@ import {
   GalleryVerticalEnd,
   GraduationCap,
   Home,
-  Pen,
   Radio,
   School,
 } from "lucide-react"

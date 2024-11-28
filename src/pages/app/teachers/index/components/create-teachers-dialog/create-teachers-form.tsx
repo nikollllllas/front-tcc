@@ -16,11 +16,10 @@ import {
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
 import { ApiError } from "@/lib/api/error"
-import { Select } from "@/components/shared/select"
 import { useMemo } from "react"
 import { listSubjects } from "@/lib/api/subjects/list-subjects"
-import { listTeachers } from "@/lib/api/teachers/list-teachers"
 import { createTeacher } from "@/lib/api/teachers/create-teacher"
+import { Select } from "@/components/shared/select"
 
 const createTeacherDataFormSchema = z.object({
   cpf: z.string({

@@ -3,7 +3,6 @@ import { Loader2 } from "lucide-react"
 import { useSearchParams } from "react-router-dom"
 import { z } from "zod"
 
-import { Pagination } from "@/components/shared/pagination"
 import { CardFooter } from "@/components/ui/card"
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table"
 

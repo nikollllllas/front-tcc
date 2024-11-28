@@ -1,9 +1,7 @@
 import { ArrowRightToLine } from "lucide-react"
-import { Link } from "react-router-dom"
 
 import { Button } from "@/components/ui/button"
 import { useSidebar } from "@/components/ui/sidebar"
-import { routes } from "@/lib/constants/routes"
 import { cn } from "@/lib/utils"
 
 export function Header(props: React.HTMLAttributes<HTMLDivElement>) {
