@@ -1,10 +1,15 @@
-import { Outlet } from "react-router-dom"
+import { Navigate, Outlet } from "react-router-dom"
 
 import { Header } from "./components/header"
 import { SidebarProvider } from "@/components/ui/sidebar"
 import { AppSidebar } from "@/components/app-sidebar"
+import { routes } from "@/lib/constants/routes"
 
 export function AppLayout() {
+  if (!localStorage.getItem("authToken")) {
+    return <Navigate to={routes.SIGN_IN} />
+  }
+
   return (
     <SidebarProvider>
       <div className="flex h-screen w-screen">
