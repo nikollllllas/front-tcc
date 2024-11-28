@@ -1,6 +1,11 @@
+import { Navigate } from "react-router-dom"
 import { SignInForm } from "./sign-in-form"
+import { routes } from "@/lib/constants/routes"
 
 export function SignInPage() {
+  if (!localStorage.getItem("authToken")) {
+    return <Navigate to={routes.SIGN_IN} />
+  }
 
   return (
     <div className="min-w-[25rem]">

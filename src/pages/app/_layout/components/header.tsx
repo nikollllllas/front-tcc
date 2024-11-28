@@ -5,7 +5,7 @@ import { useSidebar } from "@/components/ui/sidebar"
 import { cn } from "@/lib/utils"
 
 export function Header(props: React.HTMLAttributes<HTMLDivElement>) {
-  const { state, toggleSidebar } = useSidebar()
+  const { state } = useSidebar()
   const isExpanded = state === "expanded"
 
   return (
@@ -18,22 +18,7 @@ export function Header(props: React.HTMLAttributes<HTMLDivElement>) {
       <div
         className={cn(
           "flex h-16 items-center justify-between border-b border-black/5 bg-background/10 backdrop-blur-lg backdrop-filter"
-        )}>
-        <div className="flex h-16 gap-4">
-          <div
-            className={cn(
-              "flex h-16 items-center justify-center gap-4",
-              isExpanded ? "lg:hidden" : ""
-            )}>
-            <Button
-              variant={"ghost"}
-              className="mr-2 flex h-8 self-center p-2"
-              onClick={toggleSidebar}>
-              <ArrowRightToLine className="text-gray-400 size-4 scale-100 stroke-primary transition-all" />
-            </Button>
-          </div>
-        </div>
-      </div>
+        )}></div>
     </header>
   )
 }

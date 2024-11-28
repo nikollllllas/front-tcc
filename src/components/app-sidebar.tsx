@@ -1,7 +1,6 @@
 import * as React from "react"
 import {
   AudioWaveform,
-  Bolt,
   BookOpen,
   BookPlus,
   Command,
@@ -25,37 +24,15 @@ import { routes } from "@/lib/constants/routes"
 
 const data = {
   user: {
-    name: "shadcn",
-    email: "m@example.com",
+    name: "Admin",
+    email: "admin@example.com",
     avatar: "/avatars/shadcn.jpg",
   },
-  teams: [
-    {
-      name: "Acme Inc",
-      logo: GalleryVerticalEnd,
-      plan: "Enterprise",
-    },
-    {
-      name: "Acme Corp.",
-      logo: AudioWaveform,
-      plan: "Startup",
-    },
-    {
-      name: "Evil Corp.",
-      logo: Command,
-      plan: "Free",
-    },
-  ],
   projects: [
     {
       name: "Home",
       url: routes.HOME,
       icon: Home,
-    },
-    {
-      name: "Beacons",
-      url: routes.BEACON,
-      icon: Bolt,
     },
     {
       name: "Cursos",
@@ -88,7 +65,7 @@ const data = {
 export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar
-      collapsible="icon"
+      collapsible="none"
       {...props}>
       <SidebarHeader>
         <div className="flex justify-center items-center h-16">
@@ -103,7 +80,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarFooter>
         <NavUser user={data.user} />
       </SidebarFooter>
-      <SidebarRail />
     </Sidebar>
   )
 }
