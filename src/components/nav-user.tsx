@@ -1,19 +1,14 @@
 "use client"
 
 import {
-  BadgeCheck,
-  Bell,
   ChevronsUpDown,
-  CreditCard,
   LogOut,
-  Sparkles,
 } from "lucide-react"
 
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuGroup,
   DropdownMenuItem,
   DropdownMenuLabel,
   DropdownMenuSeparator,
@@ -29,7 +24,6 @@ import { signOut } from "@/lib/api/auth/sign-out"
 import { toast } from "sonner"
 import { useNavigate } from "react-router-dom"
 import { routes } from "@/lib/constants/routes"
-import { ApiError } from "@/lib/api/error"
 
 export function NavUser({
   user,
@@ -50,7 +44,7 @@ export function NavUser({
         navigate(routes.SIGN_IN)
         return "Você foi desconectado com sucesso."
       },
-      error: (error) => {
+      error: () => {
         return "Erro ao desconectar do sistema."
       },
     })
