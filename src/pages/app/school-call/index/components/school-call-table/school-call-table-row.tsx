@@ -2,13 +2,8 @@ import { format } from "date-fns"
 import { ptBR } from "date-fns/locale"
 
 import { TableCell, TableRow } from "@/components/ui/table"
+import { SchoolCall } from "@/lib/api/school-call/list-school-call"
 
-type SchoolCall = {
-  id: number
-  uuid: string
-  studentId: number
-  createdAt: string
-}
 type SchoolCallTableRowProps = {
   schoolCall: SchoolCall
 }
@@ -19,7 +14,9 @@ export const SchoolCallTableRow = ({ schoolCall }: SchoolCallTableRowProps) => (
     className="hover:bg-inherit px-0">
     <TableCell className="font-medium">{schoolCall.id}</TableCell>
     <TableCell>
-      <span className="text-sm font-medium text-black">{schoolCall.uuid}</span>
+      <span className="text-sm font-medium text-black">
+        {schoolCall.proximityUUID}
+      </span>
     </TableCell>
     <TableCell>
       <span className="text-sm font-medium text-black">

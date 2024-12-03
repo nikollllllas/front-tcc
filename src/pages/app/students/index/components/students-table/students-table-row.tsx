@@ -32,7 +32,9 @@ export const StudentsTableRow = ({ student }: StudentTableRowProps) => (
     </TableCell>
     <TableCell>
       <span className="text-sm font-medium text-black">
-        {student.birthDate}
+        {format(student.birthDate, "dd MMMM yyyy, HH:mm", {
+          locale: ptBR,
+        })}
       </span>
     </TableCell>
     <TableCell>

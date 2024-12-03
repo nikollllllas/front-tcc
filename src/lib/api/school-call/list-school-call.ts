@@ -1,8 +1,8 @@
 import { api } from "@/lib/api/api"
 
-type SchoolCall = {
+export type SchoolCall = {
   id: number
-  uuid: string
+  proximityUUID: string
   studentId: number
   createdAt: string
 }
