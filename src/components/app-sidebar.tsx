@@ -1,10 +1,12 @@
 import * as React from "react"
 import {
   BookOpen,
-  BookPlus, GraduationCap,
+  BookPlus,
+  Database,
+  GraduationCap,
   Home,
   Radio,
-  School
+  School,
 } from "lucide-react"
 
 import { NavProjects } from "@/components/nav-projects"
@@ -13,7 +15,7 @@ import {
   Sidebar,
   SidebarContent,
   SidebarFooter,
-  SidebarHeader
+  SidebarHeader,
 } from "@/components/ui/sidebar"
 import { routes } from "@/lib/constants/routes"
 
@@ -53,6 +55,11 @@ const data = {
       name: "Professores",
       url: routes.TEACHER,
       icon: GraduationCap,
+    },
+    {
+      name: "Usuários",
+      url: routes.USERS,
+      icon: Database,
     },
   ],
 }

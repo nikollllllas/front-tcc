@@ -10,6 +10,7 @@ import { CoursePage } from "./pages/app/courses/index/page"
 import { TeacherPage } from "./pages/app/teachers/index/page"
 import { BeaconPage } from "./pages/app/beacons/index/page"
 import { SchoolCallPage } from "./pages/app/school-call/index/page"
+import { UsersPage } from "./pages/app/users/index/page"
 
 const ROOT_PATH = "/"
 
@@ -25,6 +26,7 @@ export const router = createBrowserRouter([
       { path: routes.STUDENT, element: <StudentPage /> },
       { path: routes.SUBJECTS, element: <SubjectsPage /> },
       { path: routes.TEACHER, element: <TeacherPage /> },
+      { path: routes.USERS, element: <UsersPage /> },
     ],
   },
   {

@@ -8,5 +8,6 @@ export const routes = {
   STUDENT: "/estudantes",
   SUBJECTS: "/materias",
   TEACHER: "/professores",
+  USERS: "/usuarios",
 } as const
  
