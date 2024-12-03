@@ -9,6 +9,7 @@ import { SubjectsPage } from "./pages/app/subjects/index/page"
 import { CoursePage } from "./pages/app/courses/index/page"
 import { TeacherPage } from "./pages/app/teachers/index/page"
 import { BeaconPage } from "./pages/app/beacons/index/page"
+import { SchoolCallPage } from "./pages/app/school-call/index/page"
 
 const ROOT_PATH = "/"
 
@@ -19,7 +20,7 @@ export const router = createBrowserRouter([
     children: [
       { path: routes.HOME, element: <HomePage /> },
       { path: routes.BEACON, element: <BeaconPage /> },
-      /* { path: routes.SCHOOL_CALL, element: <SchoolCallPage /> }, */
+      { path: routes.SCHOOL_CALL, element: <SchoolCallPage /> },
       { path: routes.COURSE, element: <CoursePage /> },
       { path: routes.STUDENT, element: <StudentPage /> },
       { path: routes.SUBJECTS, element: <SubjectsPage /> },
